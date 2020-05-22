@@ -17,8 +17,18 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+external variable is a global one, meaning anything can access it since it  is outside any functions
 
 /* Task 2: Counter */
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function sumation(number){
+  let addUp = 0
+  for(let i = 1, i <= number; i++){
+    addUp += i
+  }
+  return addUp
+}
+
+(sumation(4))
